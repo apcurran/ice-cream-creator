@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <Header msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <CreateForm />
+    <Creations />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/Header.vue';
+import CreateForm from "@/components/CreateForm.vue";
+import Creations from "@/components/Creations.vue";
 
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    CreateForm,
+    Creations
   }
 }
 </script>
