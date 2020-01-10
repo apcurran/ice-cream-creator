@@ -1,7 +1,8 @@
 <template>
   <main class="main">
-      <p>Creations</p>
-      <p>{{ allOrders }}</p>
+      <article v-for="(order, index) in allOrders" :key="index" class="created-order">
+        {{ order }}
+      </article>
   </main>
 </template>
 
