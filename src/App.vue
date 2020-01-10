@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Header />
-    <CreateForm />
-    <Creations />
+    <CreateForm v-on:sendIceCream="updateOrder($event)" />
+    <Creations :allOrders="allOrders" />
   </div>
 </template>
 
@@ -17,6 +17,16 @@ export default {
     Header,
     CreateForm,
     Creations
+  },
+  data() {
+    return {
+      allOrders: [],
+    }
+  },
+  methods: {
+    updateOrder(newOrder) {
+      this.allOrders.push(newOrder);
+    }
   }
 }
 </script>
