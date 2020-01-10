@@ -14,10 +14,20 @@
                 </div>
             </fieldset>
         </div>
-        <div class="form-group">
-            <input type="checkbox" name="flavor" id="flavor--chocolate" class="flavor">
-            <label for="flavor"></label>
-        </div>
+        <section class="flavor">
+            <div class="form-group">
+                <input v-model="flavors" value="Chocolate" type="checkbox" name="flavor" id="flavor--chocolate" class="flavor__input">
+                <label class="flavor__label" for="flavor--chocolate">Chocolate</label>
+            </div>
+            <div class="form-group">
+                <input v-model="flavors" value="Vanilla" type="checkbox" name="flavor" id="flavor--vanilla" class="flavor__input">
+                <label class="flavor__label" for="flavor--vanilla">Vanilla</label>
+            </div>
+            <div class="form-group">
+                <input v-model="flavors" value="Strawberry" type="checkbox" name="flavor" id="flavor--strawberry" class="flavor__input">
+                <label class="flavor__label" for="flavor--strawberry">Strawberry</label>
+            </div>
+        </section>
     </form>
 </template>
 
@@ -27,6 +37,12 @@ export default {
     data() {
         return {
             pickedContainer: "",
+            flavors: []
+        }
+    },
+    methods: {
+        addFlavor(flav) {
+            this.flavors.push(flav);
         }
     }
 }
