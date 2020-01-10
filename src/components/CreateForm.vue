@@ -15,6 +15,7 @@
             </fieldset>
         </div>
         <section class="flavor">
+            <h2 class="flavor__title">Flavors:</h2>
             <div class="form-group">
                 <input v-model="flavors" value="Chocolate" type="checkbox" name="flavor" id="flavor--chocolate" class="flavor__input">
                 <label class="flavor__label" for="flavor--chocolate">Chocolate</label>
@@ -28,6 +29,21 @@
                 <label class="flavor__label" for="flavor--strawberry">Strawberry</label>
             </div>
         </section>
+        <section class="topping">
+            <h2 class="topping__title">Toppings:</h2>
+            <div class="form-group">
+                <input v-model="toppings" value="Peanuts" type="checkbox" name="topping" id="topping--peanuts" class="topping__input">
+                <label class="topping__label" for="topping--peanuts">Peanuts</label>
+            </div>
+            <div class="form-group">
+                <input v-model="toppings" value="Oreos" type="checkbox" name="topping" id="topping--oreos" class="topping__input">
+                <label class="topping__label" for="topping--oreos">Oreos</label>
+            </div>
+            <div class="form-group">
+                <input v-model="toppings" value="Caramel" type="checkbox" name="topping" id="topping--caramel" class="topping__input">
+                <label class="topping__label" for="topping--caramel">Caramel</label>
+            </div>
+        </section>
     </form>
 </template>
 
@@ -37,7 +53,8 @@ export default {
     data() {
         return {
             pickedContainer: "",
-            flavors: []
+            flavors: [],
+            toppings: []
         }
     },
     methods: {
