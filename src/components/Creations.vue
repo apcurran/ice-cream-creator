@@ -28,17 +28,49 @@ export default {
 
 <style>
 
+.main {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  width: 60rem;
+  max-width: 92.5%;
+}
+
 .created-order {
-  margin: 2rem;
-  padding: 2rem;
-  color: #fff;
-  background-color: #222;
+  position: relative;
+  padding: 3rem 1.5rem;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+}
+
+.created-order__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.created-order__item {
+  margin: .5rem .2rem;
+  padding: .35rem .9rem;
+  border-radius: 500px;
+  background-color: #CBD5E0;
 }
 
 .created-order__delete {
   background: url(../assets/icon-trash.svg) no-repeat center center;
   padding: 1rem;
   cursor: pointer;
+  border: none;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  opacity: .6;
+}
+
+.created-order__delete:hover {
+  opacity: 1;
 }
 
 </style>
