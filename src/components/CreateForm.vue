@@ -145,6 +145,7 @@ export default {
 .topping__title {
     font-size: 1.5rem;
     font-weight: 400;
+    color: #2b6cb0;
 }
 
 .form__submit {
@@ -161,6 +162,20 @@ export default {
 
 .form__submit:hover {
     background-color: hsl(237, 61%, 53%);
+}
+
+@media screen and (max-width: 36.25em) {
+    .container__title {
+        font-size: 1.25rem;
+    }
+
+    .form-group:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .form-group__label {
+        font-size: 1rem;
+    }
 }
 
 </style>

@@ -34,4 +34,11 @@ export default {
   left: -3rem;
 }
 
+@media screen and (max-width: 36.25em) {
+  .header__title {
+    font-size: 1.4rem;
+  }
+
+}
+
 </style>
