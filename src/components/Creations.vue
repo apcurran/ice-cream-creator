@@ -42,6 +42,7 @@ export default {
   padding: 3rem 1.5rem;
   box-shadow: 0 5px 12px rgba(0, 0, 0, .2);
   border-radius: 10px;
+  background-color: #fff;
 }
 
 .created-order__list {
@@ -64,8 +65,8 @@ export default {
   cursor: pointer;
   border: none;
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 7px;
+  left: 7px;
   opacity: .6;
 }
 

@@ -41,6 +41,7 @@ export default {
 
 body {
   font-family: sans-serif;
+  background-color: #EDF2F7;
 }
 
 </style>

@@ -1,50 +1,50 @@
 <template>
     <form @submit.prevent="sendIceCream" class="form">
-        <p>Create your favorite</p>
-        <div class="form-group">
-            <fieldset class="cone-option">
-                <legend class="cone-option__legend">Container</legend>
-                <div class="form-group--inner">
-                    <input v-model="order.pickedContainer" type="radio" value="Bowl" name="container" id="container--bowl" class="cone-option__input">
-                    <label for="container--bowl" class="cone-option__label">Bowl</label>
-                </div>
-                <div class="form-group--inner">
-                    <input v-model="order.pickedContainer" type="radio" value="Cone" name="container" id="container--cone" class="cone-option__input">
-                    <label for="container--cone" class="cone-option__label">Cone</label>
-                </div>
-            </fieldset>
-        </div>
-        <section class="flavor">
+        <fieldset class="container cone-option">
+            <legend class="cone-option__legend">Container Type</legend>
+            <h2 class="cone-option__title">Container Type</h2>
+            <div class="form-group">
+                <label for="container--bowl" class="form-group__label">Bowl</label>
+                <input v-model="order.pickedContainer" type="radio" value="Bowl" name="container" id="container--bowl" class="cone-option__input">
+            </div>
+            <div class="form-group">
+                <label for="container--cone" class="form-group__label">Cone</label>
+                <input v-model="order.pickedContainer" type="radio" value="Cone" name="container" id="container--cone" class="cone-option__input">
+            </div>
+        </fieldset>
+        <section class="container flavor">
             <h2 class="flavor__title">Flavors:</h2>
             <div class="form-group">
-                <input v-model="order.flavors" value="Chocolate" type="checkbox" name="flavor" id="flavor--chocolate" class="flavor__input">
                 <label class="flavor__label" for="flavor--chocolate">Chocolate</label>
+                <input v-model="order.flavors" value="Chocolate" type="checkbox" name="flavor" id="flavor--chocolate" class="flavor__input">
             </div>
             <div class="form-group">
-                <input v-model="order.flavors" value="Vanilla" type="checkbox" name="flavor" id="flavor--vanilla" class="flavor__input">
                 <label class="flavor__label" for="flavor--vanilla">Vanilla</label>
+                <input v-model="order.flavors" value="Vanilla" type="checkbox" name="flavor" id="flavor--vanilla" class="flavor__input">
             </div>
             <div class="form-group">
-                <input v-model="order.flavors" value="Strawberry" type="checkbox" name="flavor" id="flavor--strawberry" class="flavor__input">
                 <label class="flavor__label" for="flavor--strawberry">Strawberry</label>
+                <input v-model="order.flavors" value="Strawberry" type="checkbox" name="flavor" id="flavor--strawberry" class="flavor__input">
             </div>
         </section>
-        <section class="topping">
+        <section class="container topping">
             <h2 class="topping__title">Toppings:</h2>
             <div class="form-group">
-                <input v-model="order.toppings" value="Peanuts" type="checkbox" name="topping" id="topping--peanuts" class="topping__input">
                 <label class="topping__label" for="topping--peanuts">Peanuts</label>
+                <input v-model="order.toppings" value="Peanuts" type="checkbox" name="topping" id="topping--peanuts" class="topping__input">
             </div>
             <div class="form-group">
-                <input v-model="order.toppings" value="Oreos" type="checkbox" name="topping" id="topping--oreos" class="topping__input">
                 <label class="topping__label" for="topping--oreos">Oreos</label>
+                <input v-model="order.toppings" value="Oreos" type="checkbox" name="topping" id="topping--oreos" class="topping__input">
             </div>
             <div class="form-group">
-                <input v-model="order.toppings" value="Caramel" type="checkbox" name="topping" id="topping--caramel" class="topping__input">
                 <label class="topping__label" for="topping--caramel">Caramel</label>
+                <input v-model="order.toppings" value="Caramel" type="checkbox" name="topping" id="topping--caramel" class="topping__input">
             </div>
         </section>
-        <input type="submit" value="Order">
+        <section class="container">
+            <input class="form__submit" type="submit" value="Order">
+        </section>
     </form>
 </template>
 
@@ -81,5 +81,48 @@ export default {
 </script>
 
 <style>
+
+.form {
+    width: 40rem;
+    max-width: 92.5%;
+    margin: 2rem auto 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.
+
+.cone-option {
+    /* Remove default border */
+    border: none;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.cone-option,
+.flavor,
+.topping {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+/* Keep for accessiblity, but position off-screen */
+.cone-option__legend {
+    position: absolute;
+    left: -150%;
+}
+
+.cone-option__title,
+.flavor__title,
+.topping__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
 
 </style>
