@@ -40,7 +40,7 @@ export default {
 }
 
 body {
-  background-color: #EDF2F7;
+  background-color: #edf2f7;
 }
 
 body,

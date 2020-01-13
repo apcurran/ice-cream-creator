@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="sendIceCream" class="form">
-        <fieldset class="container cone-option">
+        <fieldset class="container cone-option" required>
             <legend class="cone-option__legend">Container Type</legend>
             <h2 class="container__title cone-option__title">Container Type:</h2>
             <div class="form-group-wrapper">

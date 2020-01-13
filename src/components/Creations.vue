@@ -56,7 +56,7 @@ export default {
   margin: .5rem .2rem;
   padding: .35rem .9rem;
   border-radius: 500px;
-  background-color: #CBD5E0;
+  background-color: #cbd5e0;
 }
 
 .created-order__delete {
@@ -71,7 +71,8 @@ export default {
   outline: none;
 }
 
-.created-order__delete:hover {
+.created-order__delete:hover,
+.created-order__delete:focus {
   opacity: 1;
 }
 
