@@ -40,7 +40,7 @@ export default {
 .created-order {
   position: relative;
   padding: 3rem 1.5rem;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .25);
   border-radius: 10px;
   background-color: #fff;
 }
@@ -67,7 +67,8 @@ export default {
   position: absolute;
   bottom: 7px;
   left: 7px;
-  opacity: .6;
+  opacity: .55;
+  outline: none;
 }
 
 .created-order__delete:hover {

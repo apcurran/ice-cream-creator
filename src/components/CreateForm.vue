@@ -2,7 +2,7 @@
     <form @submit.prevent="sendIceCream" class="form">
         <fieldset class="container cone-option">
             <legend class="cone-option__legend">Container Type</legend>
-            <h2 class="container__title cone-option__title">Container Type</h2>
+            <h2 class="container__title cone-option__title">Container Type:</h2>
             <div class="form-group-wrapper">
                 <div class="form-group">
                     <label for="container--bowl" class="form-group__label">Bowl</label>
@@ -89,9 +89,9 @@ export default {
 <style>
 
 .form {
-    width: 40rem;
+    width: 35rem;
     max-width: 92.5%;
-    margin: 2rem auto 0 auto;
+    margin: 2.5rem auto 0 auto;
     background-color: #fff;
     border-radius: 4px;
 }
@@ -108,10 +108,7 @@ export default {
 
 .form-group:not(:last-child) {
     margin-right: 2rem;
-}
-
-.form-group:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-group__label {
@@ -153,13 +150,17 @@ export default {
 .form__submit {
     padding: .75rem 2rem;
     color: #fff;
-    background-color: #2B6CB0;
+    background-color: #2b32b2;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: .06em;
+}
+
+.form__submit:hover {
+    background-color: hsl(237, 61%, 53%);
 }
 
 </style>

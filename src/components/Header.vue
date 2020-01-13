@@ -14,7 +14,8 @@ export default {
 
 .header {
   padding: 2rem; 
-  background-color: lightseagreen;
+  background: linear-gradient(to right, #1488cc, #2b32b2);
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +30,7 @@ export default {
   position: absolute;
   width: 2.5rem;
   height: 2.5rem;
-  top: -10%;
+  top: 0;
   left: -3rem;
 }
 

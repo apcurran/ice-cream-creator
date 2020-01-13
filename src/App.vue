@@ -40,8 +40,14 @@ export default {
 }
 
 body {
-  font-family: sans-serif;
   background-color: #EDF2F7;
+}
+
+body,
+button,
+input {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .02em;
 }
 
 </style>
