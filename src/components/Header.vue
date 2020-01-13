@@ -1,6 +1,5 @@
 <template>
   <header class="header">
-    <img src="../assets/ice-cream-cone.svg" alt="Ice cream icon" class="header__icon">
     <h1 class="header__title">Ice Cream Creator</h1>
   </header>
 </template>
@@ -14,16 +13,24 @@ export default {
 <style>
 
 .header {
-  padding: 1rem 0; 
+  padding: 2rem; 
   background-color: lightseagreen;
-  display: grid;
-  grid-template-columns: 1.4fr 2fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.header__icon {
-  width: 8rem;
-  margin-left: 1.5rem;
+.header__title {
+  position: relative;
+}
+
+.header__title::before {
+  content: url(../assets/ice-cream-cone.svg);
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: -10%;
+  left: -3rem;
 }
 
 </style>
