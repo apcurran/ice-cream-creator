@@ -1,19 +1,9 @@
 # ice-cream-creator
 
-## Project setup
-```
-npm install
-```
+## Features:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+* Vue JS front-end (emitting and passing props utilized)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* Vue components used
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* CSS Grid and Flexbox for layout
